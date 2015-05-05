@@ -15,6 +15,7 @@
 
 <form action="add_role.php">
     Name: <input type="text" name="role_name">
+    <br>
     Permissions:
                <?php
 
@@ -30,6 +31,7 @@
            $role_id = $show['id'];
            $role_name = $show['name'];
            echo "<input type=\"checkbox\" name=\"permission[]\">" . $role_name."<br/>";
+           echo "";
                      
            }
        }
